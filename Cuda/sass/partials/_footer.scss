@@ -1,0 +1,91 @@
+.footer-top {
+  background-color: $color-footer-blue;
+  color: #fff;
+  padding-bottom: 110px;
+  .wrap {
+    padding-top: 120px;
+    text-align: center;
+    >h2 {
+      text-align: center;
+      font-size: 40px;
+      padding-bottom: 45px;
+      text-transform: uppercase;
+    }
+    >p {
+      margin: 0 auto;
+      font-size: 18px;
+      text-align: center;
+      padding-bottom: 77px;
+    }
+    .inputs {
+      width: 100%;
+      max-width: 862px;
+      margin: 0 auto;
+      padding: 0;
+
+      input {
+        float: right;
+        background-color: $color-input-blue;
+        border: none;
+        border-radius: 5px;
+        width: calc(50% - 55px);
+        margin-bottom: 25px;
+        padding: 20px;
+        color: #fff;
+      }
+      input[placeholder="Your name*"] {
+        float: left;
+      }
+      textarea {
+        padding: 20px;
+        color: #fff;
+        background-color: $color-input-blue;
+        width: 860px;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 5px;
+        // resize: none;
+      }
+
+    }
+    button {
+      width: 300px;
+      height: 66px;
+      background: $color-button-blue;
+      border: none;
+      border-bottom: 4px solid $color-button-border-blue;
+      border-radius: 5px;
+      color: #fff;
+      font-size: 18px;
+      margin: 0 auto;
+      margin-top: 50px;
+      display: block;
+      text-transform: uppercase;
+      &:hover {
+        opacity: .7;
+        cursor: pointer;
+      }
+      &:active {
+        transform: translateY(1px);
+      }
+    }
+  }
+}
+
+.footer-bot {
+  background-color:$color-footer-bot;
+  border-top: 5px solid $color-footer-blue;
+  .wrap {
+    ul {
+      padding-top: 45px;
+      padding-bottom: 45px;
+      display: flex;
+      text-align: center;
+      li {
+        flex: 1;
+        color: #fff;
+        font-size: 24px;
+      }
+    }
+  }
+}
