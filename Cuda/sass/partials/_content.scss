@@ -1,0 +1,271 @@
+main {
+  // position: relative;
+  font-family: arial;
+  .service {
+    background-color: $color-green;
+    padding-top: 120px;
+    padding-bottom: 125px;
+    .wrap {
+      >h2 {
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+        font-size: 40px;
+        padding-bottom: 50px;
+      }
+      >p {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        color: #fff;
+        font-size: 18px;
+        text-align: center;
+        padding-bottom: 77px;
+      }
+      .services-items {
+        display: flex;
+        flex-wrap: wrap;
+        .service-item {
+          flex: 1;
+          padding-right: 20px;
+          text-align: center;
+          h2 {
+            color: #fff;
+            font-size: 24px;
+            padding-top: 60px;
+            padding-bottom: 25px;
+            text-transform: uppercase;
+          }
+          p {
+            font-size: 18px;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .team {
+    background-color: $color-team;
+    padding-top: 120px;
+    padding-bottom: 125px;
+    .wrap {
+      color: #000;
+      text-align: center;
+      >h2 {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 40px;
+        padding-bottom: 50px;
+      }
+      >p {
+        margin: 0 auto;
+        font-size: 18px;
+        text-align: center;
+        padding-bottom: 77px;
+      }
+      .team-items {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        flex-wrap: wrap;
+        .team-item {
+          flex: 1;
+          h3 {
+            padding-top: 40px;
+            padding-bottom: 15px;
+            font-size: 24px;
+            text-transform: uppercase;
+          }
+          h4, p {
+            font-size: 16px;
+          }
+          h4 {
+            color: $color-blue;
+          }
+          p {
+            padding-top: 30px;
+            padding-bottom: 30px;
+          }
+          ul {
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+            justify-content: center;
+            li {
+              padding-left: 7px;
+              padding-right: 7px;
+              a {
+                &:hover {
+                  opacity: .7;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .skill {
+    background-color: #fff;
+    padding-top: 110px;
+    padding-bottom: 120px;
+    .wrap {
+      >h2 {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 40px;
+        padding-bottom: 50px;
+      }
+      >p {
+        margin: 0 auto;
+        font-size: 18px;
+        text-align: center;
+        padding-bottom: 77px;
+      }
+      .circle-items {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        flex-wrap: wrap;
+        .circle-item {
+          flex: 1;
+          text-align: center;
+          a {
+            position: relative;
+            color: #000;
+            span {
+              font-size: 50px;
+              position: absolute;
+              bottom: 55px;
+              left: 30px;
+            }
+          }
+          h3 {
+            padding-top: 30px;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+  .portfolio {
+    background-color: $color-orange;
+    .wrap {
+      padding-top: 115px;
+      padding-bottom: 110px;
+      text-align: center;
+      >h2 {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 40px;
+        padding-bottom: 50px;
+      }
+      >p {
+        width: 550px;
+        margin: 0 auto;
+        font-size: 18px;
+        text-align: center;
+        padding-bottom: 77px;
+      }
+      ul {
+        padding-top: 45px;
+        padding-bottom: 60px;
+        display: inline-block;
+        li {
+          margin: 5px;
+          float: left;
+          border-radius: 5px;
+          opacity: .7;
+          background-color: $color-dark-orange;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          a {
+            border-radius: 5px;
+            text-decoration: none;
+            color: #000;
+            text-decoration: none;
+            padding: 6px 25px;
+            text-transform: uppercase;
+            &:hover {
+              opacity: 1;
+              background-color: #fff;
+            }
+          }
+        }
+      }
+      .port-items {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        flex-wrap: wrap;
+        .port-item {
+          flex: 1;
+          h3 {
+            padding-top: 30px;
+            padding-bottom: 60px;
+          }
+        }
+      }
+      button {
+        width: 300px;
+        height: 66px;
+        background: $color-green;
+        border: none;
+        border-bottom: 4px solid $color-button-border-green;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 18px;
+        margin: 0 auto;
+        display: block;
+        text-transform: uppercase;
+        &:hover {
+          opacity: .7;
+          cursor: pointer;
+        }
+        &:active {
+          transform: translateY(1px);
+        }
+      }
+    }
+  }
+  .about {
+    background-color: $color-rose;
+    color: #fff;
+    .wrap {
+      padding-top: 120px;
+      padding-bottom: 50px;
+      text-align: center;
+      >h2 {
+        text-align: center;
+        font-size: 40px;
+        padding-bottom: 50px;
+        text-transform: uppercase;
+      }
+      >p {
+        width: 550px;
+        margin: 0 auto;
+        font-size: 18px;
+        text-align: center;
+        padding-bottom: 77px;
+      }
+      .about-items {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        flex-wrap: wrap;
+        .about-item {
+          flex: 1;
+          h3 {
+            text-transform: uppercase;
+          }
+          h4 {
+            color: $color-orange;
+          }
+          p {
+            font-style: italic;
+          }
+        }
+      }
+    }
+  }
+}
