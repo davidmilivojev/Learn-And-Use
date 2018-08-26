@@ -195,7 +195,8 @@ main {
         font-size: 40px;
         padding-bottom: 50px; }
       main .portfolio .wrap > p {
-        width: 550px;
+        width: 100%;
+        max-width: 550px;
         margin: 0 auto;
         font-size: 18px;
         text-align: center;
@@ -229,6 +230,8 @@ main {
         flex-wrap: wrap; }
         main .portfolio .wrap .port-items .port-item {
           flex: 1; }
+          main .portfolio .wrap .port-items .port-item img {
+            width: 100%; }
           main .portfolio .wrap .port-items .port-item h3 {
             padding-top: 30px;
             padding-bottom: 60px; }
@@ -249,6 +252,9 @@ main {
           cursor: pointer; }
         main .portfolio .wrap button:active {
           transform: translateY(1px); }
+    @media only screen and (max-width: 640px) {
+      main .portfolio .wrap .port-items .port-item {
+        flex: 50%; } }
   main .about {
     background-color: #d74680;
     color: #fff; }
@@ -262,7 +268,7 @@ main {
         padding-bottom: 50px;
         text-transform: uppercase; }
       main .about .wrap > p {
-        width: 550px;
+        max-width: 550px;
         margin: 0 auto;
         font-size: 18px;
         text-align: center;
@@ -280,6 +286,9 @@ main {
             color: #ffdd99; }
           main .about .wrap .about-items .about-item p {
             font-style: italic; }
+  @media only screen and (max-width: 640px) {
+    main .about-items {
+      flex-direction: column; } }
 
 .footer-top {
   background-color: #3c5499;
@@ -318,7 +327,8 @@ main {
         padding: 20px;
         color: #fff;
         background-color: #273a71;
-        width: 860px;
+        max-width: 860px;
+        width: 100%;
         box-sizing: border-box;
         border: none;
         border-radius: 5px; }
@@ -353,5 +363,8 @@ main {
       flex: 1;
       color: #fff;
       font-size: 24px; }
+  @media only screen and (max-width: 640px) {
+    .footer-bot .wrap ul {
+      flex-direction: column; } }
 
 /*# sourceMappingURL=main.css.map */

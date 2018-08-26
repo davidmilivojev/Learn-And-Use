@@ -40,7 +40,8 @@
         padding: 20px;
         color: #fff;
         background-color: $color-input-blue;
-        width: 860px;
+        max-width: 860px;
+        width: 100%;
         box-sizing: border-box;
         border: none;
         border-radius: 5px;
@@ -85,6 +86,13 @@
         flex: 1;
         color: #fff;
         font-size: 24px;
+      }
+    }
+  }
+  @media only screen and (max-width: 640px) {
+    .wrap {
+      ul {
+        flex-direction: column;
       }
     }
   }
